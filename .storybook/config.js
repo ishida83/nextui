@@ -9,8 +9,8 @@ function loadStories() {
 }
 
 setOptions({
-  name: "Birdeye Storybook",
-  url: "https://birdeye.com",
+  name: "Storybook",
+  url: "https://test.com",
   goFullScreen: false,
   showLeftPanel: true,
   showDownPanel: true,
