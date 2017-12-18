@@ -9,8 +9,7 @@ Here are the few libraries we are going to use.
 
 # Setup Project
 ```
-git clone https://github.com/ankur-kushwaha/react-component-library.git
-cd react-component-library
+cd nextui
 yarn
 //after the installation complete
 yarn storybook

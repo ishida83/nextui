@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Roboto;
+  src: url('./fonts/Roboto/Roboto-Light.ttf');
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #212121;
+  margin: 0;
+  text-transform: none;
+}
+
+.row {
+  max-width: 1025px;
+  margin: 0 auto;
+}

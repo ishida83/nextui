@@ -1,20 +1,28 @@
 {
   "devDependencies": {
-    "@storybook/addon-knobs": "^3.2.0-alpha.0",
-    "@storybook/addon-storyshots": "^3.1.4",
-    "@storybook/react": "^3.1.3",
+    "@storybook/addon-knobs": "^3.2.10",
+    "@storybook/addon-storyshots": "^3.2.10",
+    "@storybook/react": "^3.2.10",
     "babel-preset-es2015": "^6.24.1",
-    "jest": "^20.0.4",
-    "lerna": "^2.0.0-rc.5",
+    "jest": "^21.1.0",
+    "lerna": "^2.2.0",
     "react": "^15.6.1",
-    "@storybook/addon-info": "^3.1.4",
-    "@storybook/addon-options": "^3.1.2",
+    "@storybook/addon-info": "^3.2.10",
+    "@storybook/addon-options": "^3.2.10",
     "react-dom": "^15.6.1",
-    "react-test-renderer": "^15.6.1"
+    "react-test-renderer": "^15.6.1",
+    "babel-jest": "^21.0.2",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^2.9.1",
+    "husky": "^0.14.3",
+    "react-storybook-addon-props-combinations": "^1.0.0"
   },
   "scripts": {
-    "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest",
+    "storybook": "start-storybook -p 9001 -c .storybook -s ./packages/Styles/src/assets/",
+    "build-storybook": "build-storybook -c .storybook -s ./packages/Styles/src/assets/ -o .out",
+    "start": "npm run storybook",
+    "precommit": "npm run test",
     "postinstall": "node postinstall.js"
   },
   "dependencies": {}

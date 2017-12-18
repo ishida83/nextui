@@ -12,8 +12,8 @@ fs.readdirSync(lib)
 // ensure path has package.json
 if (!fs.existsSync(join(modPath, 'package.json'))) return
 
-console.log("Runnig npm install on "+modPath);
+console.log("Runnig yarn install on "+modPath);
 // install folder
-cp.execSync('npm install', { cwd: modPath, env: process.env, stdio: 'inherit' })
+cp.execSync('yarn install', { cwd: modPath, env: process.env, stdio: 'inherit' })
 //cp.spawn('npm', ['i'], { env: process.env, cwd: modPath, stdio: 'inherit' })
 })

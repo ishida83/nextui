@@ -1,16 +1,18 @@
 import { configure, setAddon } from "@storybook/react";
+import withPropsCombinations, { setDefaults } from "react-storybook-addon-props-combinations";
+
 import infoAddon from "@storybook/addon-info";
 import { setOptions } from "@storybook/addon-options";
 
 function loadStories() {
-  require("../packages/index.js");
+  require("../modules/index.js");
 
   // You can require as many stories as you need.
 }
 
 setOptions({
-  name: "Storybook",
-  url: "https://test.com",
+  name: "Stubhub",
+  url: "https://www.stubhub.com",
   goFullScreen: false,
   showLeftPanel: true,
   showDownPanel: true,
@@ -20,5 +22,10 @@ setOptions({
 });
 
 setAddon(infoAddon);
+setAddon(withPropsCombinations);
+
+setDefaults({
+  // overwrite global defaults here
+});
 
 configure(loadStories, module);
